@@ -1,6 +1,6 @@
 #
-# This file describes how a virtual machine should be created to start working
-# on Issue Tracker Bot project.
+# This file describes how a virtual machine should be created to run 
+# some experiments for Fernando Lemes da Silva dissertation.
 #
 # It required VirtualBox 5.2.18 and Vagrant 2.1.2 or greater.
 #
@@ -9,6 +9,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "mestrado-vm"
+  config.disksize.size = '16GB'
 
   # Forwarded ports
   config.vm.network :forwarded_port, guest: 8080, host: 8080, auto_correct: true # http

@@ -16,6 +16,10 @@ fi
 
 # Docker Compose instalation
 apt-get install docker-compose -y
+adduser ubuntu docker
 
 # Latex tools
 apt-get install texlive-base texlive-latex-base texlive-fonts-recommended texlive-generic-recommended texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-bibtex-extra texlive-lang-portuguese texlive-lang-english lmodern biber latexmk -y
+
+# Development tools
+apt-get install openjdk-9-jdk maven -y
