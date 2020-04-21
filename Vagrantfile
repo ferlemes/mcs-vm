@@ -12,8 +12,7 @@ Vagrant.configure('2') do |config|
   config.disksize.size = '16GB'
 
   # Forwarded ports
-  config.vm.network :forwarded_port, guest: 8080, host: 8080, auto_correct: true # http
-  config.vm.network :forwarded_port, guest: 8443, host: 8443, auto_correct: true # https
+  config.vm.network :forwarded_port, guest: 8080, host: 8080, auto_correct: true
 
   # Auto install script
   config.vm.provision :shell, path: 'bootstrap.sh'

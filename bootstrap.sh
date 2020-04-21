@@ -22,4 +22,4 @@ adduser ubuntu docker
 apt-get install texlive-base texlive-latex-base texlive-fonts-recommended texlive-generic-recommended texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-bibtex-extra texlive-lang-portuguese texlive-lang-english lmodern biber latexmk -y
 
 # Development tools
-apt-get install openjdk-9-jdk maven -y
+apt-get install openjdk-8-jdk maven -y
